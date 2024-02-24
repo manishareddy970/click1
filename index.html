@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+         
+
+         #manisha{
+            animation-name: r;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+         }
+
+        @keyframes r {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+
+        }
+    </style>
+</head>
+<body> 
+    <h2></h2>
+    <img class="a" src="">
+    
+    <script>
+    
+    var h=document.getElementsByTagName("h2");
+    h[0].innerText="Amazon Products";
+    h[0].setAttribute("style","margin-left:670px")
+    h[0].addEventListener("click",cb);
+    
+    var i4=document.createElement("img");
+     h[0].appendChild(i4);
+     i4.setAttribute("id","manisha");
+    
+
+   var z=document.createElement("div");
+   document.body.appendChild(z);
+   z.setAttribute("style","margin-left:670px")
+   z.style.border="groove 1px";
+   z.style.width="250px";
+   z.style.height="250px";
+   
+
+   var y=document.createElement("div");
+   document.body.appendChild(y);
+   y.setAttribute("style","margin-top:130px");
+   y.style.marginLeft="480px";
+  
+
+   var imgg=document.createElement("img")
+   z.appendChild(imgg);
+
+
+    var i1=document.createElement("img");
+    i1.addEventListener("click",one);
+    i1.src="./lipp.webp";
+    y.appendChild(i1);
+    i1.style.width="180px";
+    i1.style.height="230px";
+    i1.style.border="groove 1.5px";
+    i1.style.margin="10px";
+
+    
+    var i2=document.createElement("img");
+    i2.addEventListener("click",two);
+    i2.src="./lip.webp";
+    y.appendChild(i2);
+    i2.style.width="200px";
+    i2.style.height="230px";
+    i2.style.border="groove 1.5px";
+    i2.style.margin="10px";
+   
+
+    var i3=document.createElement("img");
+    i3.addEventListener("click",three);
+    i3.src="./lippp.webp";
+    y.appendChild(i3);
+    i3.style.width="200px";
+    i3.style.border="groove 1.5px";
+    i3.style.margin="10px";
+    
+    
+
+     
+    function one(){
+        imgg.src="./lipp.webp";
+        imgg.style.width="180px".height="230px";
+    
+    }
+
+    function two(){
+       
+        imgg.src="./lip.webp";
+        imgg.style.width="200px".height="170px";
+
+    }
+    function three(){
+       
+       imgg.src="./lippp.webp";
+       imgg.style.width="200px";
+   }
+
+   function cb(){
+        i4.setAttribute("src","./ama.webp");
+       h[0].replaceWith(i4);
+       i4.setAttribute("style","margin-left:700px;width:100px;height:100px");
+       
+
+   }
+
+    </script>
+</body>
+</html>
